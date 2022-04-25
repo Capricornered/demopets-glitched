@@ -441,6 +441,107 @@ textarea {
     line-height: 1.2em;
     font-weight: 100;
 }
+/*contact page*/
+.contact {
+    box-sizing: border-box;
+    font-size: 1em;
+    height: auto;
+    border: 0.6em solid #9250C5;
+    border-radius: 30px;
+    box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.contact h2 {
+    font-family: marvin-round, sans-serif;
+    color: #FFB56C;
+    font-size: 2em;
+    margin-top: .3em;
+    text-align: center;
+}
+.contact hr {
+    clear: both;
+    border: 1px solid rgba(76, 37, 105, 0.432);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.socials {
+    display: flex;
+    clear: both;
+    justify-content: center;
+}
+.socials img {
+    width: 50px;
+    height: auto;
+    margin: .4em;
+}
+.blurb {
+    margin: .5em 1.5em 1em 1.5em;
+    font-size: .9em;
+}
+.contact form {
+    margin-left: 1em;
+}
+.contact input, .contact select {
+    float: right;
+    width: 10em;
+    margin-right: 1em;
+}
+input[type="radio"] {
+    float: none;
+    width: auto;
+}
+.radio {
+    text-align: right;
+    margin: .5em;
+}
+.contact input[type=text] {
+    border: 2px solid #FFB56C;
+    border-radius: 50em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+.contact select {
+    border: 2px solid #FFB56C;
+    border-radius: 50em;
+    background-color: #ffffff;
+    width: 11.5em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+input[type=submit] {
+    background-color: #F99FFF;
+    padding: .2em;
+    border-radius: 50em;
+    font-family: marvin-round;
+    color: #ffffff;
+    font-size: 1.5em;
+    width: 10em;
+    box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.contact textarea {
+    vertical-align: top;
+    border: 2px solid #FFB56C;
+    border-radius: 1em;
+    padding: .8em;
+    right: 0px;
+    width: 12em;
+    height: 8em;
+    float: right;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+.inputc {
+    display: flex;
+    clear: both;
+    justify-content: center;
+}
 /*tablet screen*/
 @media (min-width: 768px) and (max-width: 1024px) {
     /*grid container*/
@@ -788,6 +889,90 @@ textarea {
         text-align: left;
         line-height: 1.2em;
         font-weight: 100;
+    }
+    /*contact page*/
+    .contact {
+        box-sizing: border-box;
+        font-size: 1em;
+        height: auto;
+        border: 0.6em solid #9250C5;
+        border-radius: 30px;
+        box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+    .socials {
+        display: flex;
+        clear: both;
+        justify-content: center;
+    }
+    .socials img {
+        width: 60px;
+        height: auto;
+        margin: .4em;
+    }
+    .blurb {
+        font-size: 1em;
+    }
+    .contact form {
+        margin-left: 5em;
+        width: 31em;
+    }
+    .contact form hr {
+        width: 100%;
+    }
+    .contact input, .contact select {
+        float: right;
+        width: 20em;
+        margin-right: 0;
+    }
+    input[type="radio"] {
+        float: none;
+        width: 2em;
+    }
+    .radio {
+        text-align: right;
+        margin-right: 0;
+    }
+    .contact input[type=text] {
+        border: 2px solid #FFB56C;
+        border-radius: 50em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    .contact select {
+        border: 2px solid #FFB56C;
+        border-radius: 50em;
+        background-color: #ffffff;
+        width: 11.5em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    input[type=submit] {
+        background-color: #F99FFF;
+        padding: .2em;
+        border-radius: 50em;
+        font-family: marvin-round;
+        color: #ffffff;
+        font-size: 1.5em;
+        width: 10em;
+        box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .contact textarea {
+        vertical-align: top;
+        border: 2px solid #FFB56C;
+        border-radius: 1em;
+        padding: .8em;
+        right: 0px;
+        width: 25em;
+        height: 14em;
+        float: right;
+        margin-bottom: 1em;
+        margin-right: 0;
     }
 }
 /*desktop screen*/
@@ -1223,5 +1408,82 @@ textarea {
         text-align: left;
         line-height: 1.2em;
         font-weight: 100;
+    }
+    /*contact page*/
+    .contact {
+        box-sizing: border-box;
+        font-size: 1em;
+        height: auto;
+        border: 0.6em solid #9250C5;
+        border-radius: 30px;
+        box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        align-self: flex-start;
+    }
+    .blurb {
+        font-size: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .contact form {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    .contact form hr {
+        width: 100%;
+    }
+    .contact input, .contact select {
+        float: right;
+        width: 20em;
+        margin-right: 0;
+    }
+    input[type="radio"] {
+        float: none;
+        width: 2em;
+    }
+    .radio {
+        text-align: right;
+        margin-right: 0;
+    }
+    .contact input[type=text] {
+        border: 2px solid #FFB56C;
+        border-radius: 50em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    .contact select {
+        border: 2px solid #FFB56C;
+        border-radius: 50em;
+        background-color: #ffffff;
+        width: 11.5em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    input[type=submit] {
+        background-color: #F99FFF;
+        padding: .2em;
+        border-radius: 50em;
+        font-family: marvin-round;
+        color: #ffffff;
+        font-size: 1.5em;
+        width: 10em;
+        box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .contact textarea {
+        vertical-align: top;
+        border: 2px solid #FFB56C;
+        border-radius: 1em;
+        padding: .8em;
+        right: 0px;
+        width: 25em;
+        height: 14em;
+        float: right;
+        margin-bottom: 1em;
+        margin-right: 0;
     }
 }
