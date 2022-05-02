@@ -980,10 +980,39 @@ button[type=submit] {
     /*grid container*/
     .grid-container {
         display: grid;
+        grid-template-columns: .2fr .6fr .6fr .6fr .2fr; 
+        gap: .9em;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-container-home {
+        display: grid;
         grid-template-columns: .2fr .4fr .6fr .6fr .2fr; 
         gap: .7em;
         justify-content: center;
         align-items: center;
+        background-color: #ffffff;
+    }
+    .side1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 7;
+        background-color: #ffdbb69c;
+        height: 100%;
+        width: 90%;
+        border-right: 7px solid #ffb66ca3;
+    }
+    .side2 {
+        grid-column-start: 5;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 7;
+        background-color: #ffdbb69c;
+        height: 100%;
+        width: 90%;
+        justify-self: flex-end;
+        border-left: 7px solid #ffb66ca3;
     }
     /*header*/
     .head {
@@ -1064,15 +1093,15 @@ button[type=submit] {
     .userbig {
         display: block;
         font-size: 1em;
-        height: 27vw;
         padding: .5em;
         border: 10px solid #F99FFF;
         border-radius: 30px;
         box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
         grid-row: 3;
         margin-right: 1em;
+        align-self: flex-start;
     }
     .avatar {
         display: block;
@@ -1100,6 +1129,26 @@ button[type=submit] {
     }
     .avitext a:hover {
         color: #ffdab6 !important;
+    }
+    /*user info on homepage*/
+    .userbighome {
+        display: block;
+        font-size: 1em;
+        height: 27vw;
+        padding: .5em;
+        border: 10px solid #F99FFF;
+        border-radius: 30px;
+        box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 3;
+        margin-right: 1em;
+    }
+    .userbighome h2 {
+        font-size: 2vw;
+        color: #9250C5;
+        font-family: marvin-round;
+        text-align: center;
     }
     /*carousel*/
     .section-one {
@@ -1132,16 +1181,14 @@ button[type=submit] {
     .pet {
         display: block;
         font-size: 1vw;
-        height: 40vw;
         padding: .5em;
         border: 10px solid #9250C5;
         border-radius: 30px;
         box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
         grid-column-start: 2;
         grid-column-end: 3;
-        grid-row: 4;
-        margin-right: 1em;
-        margin-top: .2em;
+        grid-row: 3;
+        align-self: flex-start;
     }
     .pet h2 {
         font-size: 2vw;
@@ -1183,6 +1230,27 @@ button[type=submit] {
         to {
             transform:translateY(-20%);
         }
+    }
+     /*pet for homepage*/
+     .pethome {
+        display: block;
+        font-size: 1vw;
+        height: 40vw;
+        padding: .5em;
+        border: 10px solid #9250C5;
+        border-radius: 30px;
+        box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 4;
+        margin-right: 1em;
+        margin-top: .2em;
+    }
+    .pethome h2 {
+        font-size: 2vw;
+        color: #FFB56C;
+        font-family: marvin-round;
+        text-align: center;
     }
     /*feed*/
     .section-two {
@@ -1271,16 +1339,15 @@ button[type=submit] {
     }
     /*footer*/
     .foot {
-        padding: 2%;
         font-size: 0.9em;
         text-align: center;
         grid-column-start: 2;
         grid-column-end: 5;
-        grid-row: 6;
+        grid-row: 5;
+        align-self: flex-start;
     }
     .foot a {
         text-decoration: none;
-        padding: .6em;
     }
     .foot a:hover {
         animation: footerfadein 0.2s;
@@ -1297,12 +1364,11 @@ button[type=submit] {
     .acct1 {
         box-sizing: border-box;
         font-size: 1em;
-        height: 67vw;
         border: 0.6em solid #FFB56C;
         border-radius: 30px;
         box-shadow:3px 3px 5px rgba(0, 0, 0, 0.16);
         grid-column-start: 3;
-        grid-column-end: 5;
+        grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 5;
         text-align: left;
@@ -1319,19 +1385,30 @@ button[type=submit] {
         clear: both;
         border: 1px solid rgba(76, 37, 105, 0.432);
     }
-    .acctform input, .acctform select {
-        float: right;
-        width: 30em;
+    .acct1 form {
+        padding-left: 1em;
+        padding-right: 1em;
     }
-    input[type=text] {
+    .acct1 form hr {
+        width: 100%;
+    }
+    .acct1 input, .acct1 select {
+        float: right;
+        margin-right: 0;
+    }
+    .acct1 input[type=text] {
         border: 2px solid #F99FFF;
         border-radius: 50em;
+        padding-left: .8em;
+        padding-right: .8em;
     }
-    select {
+    .acct1 select {
         border: 2px solid #F99FFF;
         border-radius: 50em;
         background-color: #ffffff;
-        width: 11.5em;
+        width: 12.5em;
+        padding-left: .8em;
+        padding-right: .8em;
     }
     input[type=submit] {
         background-color: #F99FFF;
@@ -1345,19 +1422,14 @@ button[type=submit] {
         margin-top: 5px;
         margin-bottom: 10px;
     }
-    .inputc {
-        display: flex;
-        clear: both;
-        justify-content: center;
-    }
-    textarea {
+    .acct1 textarea {
         vertical-align: top;
         border: 2px solid #F99FFF;
         border-radius: 1em;
         padding: .8em;
         right: 0px;
         width: 40em;
-        height: 16em;
+        height: 5em;
         float: right;
         margin-bottom: 1em;
     }
