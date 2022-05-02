@@ -502,16 +502,16 @@ input[type="radio"] {
 .contact input[type=text] {
     border: 2px solid #FFB56C;
     border-radius: 50em;
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .contact select {
     border: 2px solid #FFB56C;
     border-radius: 50em;
     background-color: #ffffff;
     width: 11.5em;
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 button[type=submit] {
     background-color: #F99FFF;
@@ -939,16 +939,16 @@ button[type=submit] {
     .contact input[type=text] {
         border: 2px solid #FFB56C;
         border-radius: 50em;
-        padding-left: .5em;
-        padding-right: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     .contact select {
         border: 2px solid #FFB56C;
         border-radius: 50em;
         background-color: #ffffff;
         width: 11.5em;
-        padding-left: .5em;
-        padding-right: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     input[type=submit] {
         background-color: #F99FFF;
@@ -1523,16 +1523,16 @@ button[type=submit] {
     .contact input[type=text] {
         border: 2px solid #FFB56C;
         border-radius: 50em;
-        padding-left: .5em;
-        padding-right: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     .contact select {
         border: 2px solid #FFB56C;
         border-radius: 50em;
         background-color: #ffffff;
         width: 11.5em;
-        padding-left: .5em;
-        padding-right: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     input[type=submit] {
         background-color: #F99FFF;
